@@ -1,4 +1,4 @@
 package app.core.repositories.clients;
 
-public interface BusinessClientRepo {
+public interface BusinessClientRepo extends ClientRepo {
 }

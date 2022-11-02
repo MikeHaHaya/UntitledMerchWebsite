@@ -1,7 +1,6 @@
 package app.core.entities.clients;
 
 import app.core.entities.merch.Merch;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

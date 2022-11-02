@@ -1,4 +1,6 @@
 package app.core.repositories.clients;
 
-public interface AdminRepo {
+public interface AdminRepo extends ClientRepo {
+
+
 }
