@@ -15,21 +15,17 @@ import java.util.List;
 @NoArgsConstructor
 public class BusinessClient extends Client {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-    private String name, email, password;
     @OneToMany(cascade = CascadeType.PERSIST)
     private List<Merch> merchList;
 
     @Override
     public String toString() {
         return "BusinessClient{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                ", merchList=" + merchList +
+                "id=" + this.getId() +
+                ", name='" + this.getName() + '\'' +
+                ", email='" + this.getEmail() + '\'' +
+                ", password='" + this.getPassword() + '\'' +
+                ", merchList=" + this.getMerchList() +
                 '}';
     }
 
