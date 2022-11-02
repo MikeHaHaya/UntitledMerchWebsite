@@ -15,7 +15,7 @@ import java.util.List;
 public class PrivateClient extends Client {
 
     @ManyToMany(fetch = FetchType.LAZY) // TODO -- Find the best way to do this
-    @JoinTable(name = "p-clients_merch", joinColumns = @JoinColumn(name = "p-clients_id"), inverseJoinColumns = @JoinColumn(name = "merch_id"))
+//    @JoinTable(name = "p-clients_merch", joinColumns = @JoinColumn(name = "p-clients_id"), inverseJoinColumns = @JoinColumn(name = "merch_id"))
     private List<Merch> merchList;
 
     @Override
